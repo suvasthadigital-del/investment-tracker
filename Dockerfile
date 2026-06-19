@@ -7,7 +7,7 @@ WORKDIR /src
 
 # Copy only csproj first (cache-friendly)
 COPY api/*.csproj ./api/
-RUN dotnet restore ./api/*.csproj
+RUN dotnet restore ./api
 # Copy rest of the API source
 COPY api ./api
 
